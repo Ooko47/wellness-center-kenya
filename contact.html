@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Joseph Otieno Pesah - Wellness Center</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f6faf4}
+header{padding:18px 6%;display:flex;justify-content:space-between;align-items:center;background:#fff;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,0.06)}
+.logo{font-weight:700;font-size:18px;color:#0a2a14;display:flex;align-items:center;gap:10px}
+.logo b{width:36px;height:36px;background:#145a2f;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff}
+nav a{margin-left:32px;text-decoration:none;color:#555;font-size:14px;font-weight:500}
+nav a.active{color:#145a2f;font-weight:700;border-bottom:2.5px solid #145a2f;padding-bottom:4px}
+
+.page-hero{min-height:300px;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 6%;position:relative;background:url('herbs.jpg') center/cover no-repeat}
+.page-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.45) 100%);z-index:1}
+.page-hero-content{position:relative;z-index:2;max-width:700px}
+.page-hero h1{font-family:'DM Serif Display',serif;font-size:48px;color:#fff;line-height:1}
+.page-hero h1 em{color:#b6f0bf;font-style:italic}
+.page-hero p{color:#d9ece0;margin-top:10px;font-size:14.5px}
+
+.contact-wrap{padding:50px 6%;display:grid;grid-template-columns:0.9fr 1.1fr;gap:36px;margin-top:-40px;position:relative;z-index:5;background:#fff;border-radius:28px 28px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,0.08)}
+
+/* LEFT INFO */
+.info h2{font-family:'DM Serif Display',serif;font-size:32px;color:#0a1f0e;line-height:1}
+.info h2 em{color:#145a2f;font-style:italic}
+.info p.intro{color:#5a7560;font-size:14px;line-height:1.7;margin-top:12px}
+.info-cards{margin-top:24px;display:flex;flex-direction:column;gap:14px}
+.info-card{display:flex;gap:14px;align-items:flex-start;background:#f6faf4;border:1px solid #e6efe3;border-radius:16px;padding:16px}
+.info-card b.icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff;flex-shrink:0}
+.info-card:nth-child(1) b.icon{background:#0e2816}
+.info-card:nth-child(2) b.icon{background:#145a2f}
+.info-card:nth-child(3) b.icon{background:#2faa55}
+.info-card h4{font-size:13px;font-weight:700;color:#0a1f0e}
+.info-card p{font-size:12.5px;color:#6a8470;margin-top:2px;line-height:1.5}
+.info-card a{color:#145a2f;font-weight:700;text-decoration:none;font-size:13px}
+
+.direct-wa{margin-top:22px;background:linear-gradient(135deg,#0e2816,#145a2f);border-radius:16px;padding:18px;display:flex;justify-content:space-between;align-items:center;gap:12px;color:#fff}
+.direct-wa h4{font-size:14px}
+.direct-wa p{font-size:12px;color:#8fb49a;margin-top:2px}
+.direct-wa a{background:#25D366;color:#fff;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:700;font-size:13px}
+
+/* FORM */
+.form-box{background:#fff;border:1px solid #e6efe3;border-radius:20px;padding:26px;box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+.form-box h3{font-size:18px;font-weight:700;color:#0a1f0e;margin-bottom:4px}
+.form-box p{font-size:12.5px;color:#6a8470;margin-bottom:18px}
+.form-box label{font-size:11.5px;font-weight:700;letter-spacing:1px;color:#3a5a42;display:block;margin-bottom:6px;margin-top:14px}
+.form-box input, .form-box textarea, .form-box select{width:100%;padding:12px 14px;border:1.5px solid #dde9d9;border-radius:11px;font-size:13.5px;background:#f9fdf8;outline:none;transition:0.2s}
+.form-box input:focus, .form-box textarea:focus, .form-box select:focus{border-color:#2faa55;background:#fff;box-shadow:0 0 0 4px rgba(47,170,85,0.12)}
+.form-box textarea{height:110px;resize:none}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.submit-btn{margin-top:18px;width:100%;background:#145a2f;color:#fff;border:none;padding:13px;border-radius:11px;font-weight:700;font-size:14px;cursor:pointer;transition:0.2s}
+.submit-btn:hover{background:#0e2816;transform:translateY(-1px)}
+.form-note{margin-top:12px;font-size:11px;color:#8fb49a;text-align:center}
+
+footer{background:#06100a;color:#fff;margin-top:40px}
+.footer-main{padding:36px 6%;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}
+.footer-brand h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.footer-brand h3 span{width:36px;height:36px;background:#2faa55;border-radius:9px;display:flex;align-items:center;justify-content:center}
+.footer-brand p{color:#8fb49a;font-size:13.5px;line-height:1.6;max-width:320px}
+.footer-col h4{font-size:11px;letter-spacing:2px;color:#8fcf9a;margin-bottom:16px}
+.footer-col a{display:block;color:#c8dccb;text-decoration:none;font-size:13px;margin-bottom:10px}
+.ad-banner{background:linear-gradient(90deg,#145a2f,#2faa55);padding:16px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ad-banner p{font-size:13.5px;font-weight:500}
+.ad-banner p b{background:rgba(0,0,0,0.25);padding:5px 12px;border-radius:20px;margin-left:8px;color:#fff}
+.ad-banner a{background:#fff;color:#0a2a14;padding:10px 20px;border-radius:11px;text-decoration:none;font-weight:700;font-size:13px}
+.copyright{padding:14px 6%;display:flex;justify-content:space-between;color:#5a7a62;font-size:11.5px;flex-wrap:wrap;border-top:1px solid #102216}
+@media(max-width:900px){.contact-wrap{grid-template-columns:1fr;padding:32px 6%}.row{grid-template-columns:1fr}.page-hero h1{font-size:36px}.footer-main{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><b>🌿</b> Wellness Center</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a class="active" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-content">
+    <h1>Talk to <em>Joseph</em></h1>
+    <p>Have a question about a product? Need free wellness consultation? I'm here to help you.</p>
+  </div>
+</section>
+
+<section class="contact-wrap">
+  <!-- LEFT -->
+  <div class="info">
+    <h2>Let's Start Your <em>Wellness Journey</em></h2>
+    <p class="intro">I'm Joseph Otieno Pesah, founder of Wellness Center and Green World Distributor. Reach me directly for genuine products and honest guidance.</p>
+    
+    <div class="info-cards">
+      <div class="info-card">
+        <b class="icon">📞</b>
+        <div>
+          <h4>Call Joseph Directly</h4>
+          <p>Mon - Sat: 8am - 8pm</p>
+          <a href="tel:0725213860">0725213860</a>
+        </div>
+      </div>
+      <div class="info-card">
+        <b class="icon">💬</b>
+        <div>
+          <h4>WhatsApp - Fast Response</h4>
+          <p>I reply within minutes</p>
+          <a href="https://wa.me/254725213860?text=Habari%20Joseph%2C%20nimeona%20website%20yako" target="_blank">Chat on WhatsApp - 0725213860</a>
+        </div>
+      </div>
+      <div class="info-card">
+        <b class="icon">📍</b>
+        <div>
+          <h4>Location & Delivery</h4>
+          <p>Nairobi, Kenya<br>Countrywide delivery available<br>Pay on delivery in Nairobi</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="direct-wa">
+      <div>
+        <h4>Need urgent help? 💚</h4>
+        <p>Tap to chat with Joseph now</p>
+      </div>
+      <a href="https://wa.me/254725213860?text=Habari%20Joseph%2C%20nahitaji%20msaada%20wa%20haraka" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- RIGHT FORM -->
+  <div class="form-box">
+    <h3>Send a Message to Joseph</h3>
+    <p>Fill this form and I will call you back. Or WhatsApp me directly for faster response.</p>
+    
+    <form onsubmit="event.preventDefault(); let n=document.getElementById('name').value; let p=document.getElementById('phone').value; let m=document.getElementById('msg').value; window.open('https://wa.me/254725213860?text=Habari Joseph, Jina langu ni '+encodeURIComponent(n)+' - Namba '+encodeURIComponent(p)+'%0A%0A'+encodeURIComponent(m),'_blank');">
+      <div class="row">
+        <div>
+          <label>YOUR NAME</label>
+          <input id="name" type="text" placeholder="Joseph Otieno" required>
+        </div>
+        <div>
+          <label>PHONE NUMBER</label>
+          <input id="phone" type="tel" placeholder="0725..." required>
+        </div>
+      </div>
+      <label>WHAT DO YOU NEED HELP WITH?</label>
+      <select>
+        <option>Immunity Boost</option>
+        <option>Weight Management</option>
+        <option>Men's Health</option>
+        <option>Women's Health</option>
+        <option>Detox & Cleansing</option>
+        <option>Other - Explain in message</option>
+      </select>
+      <label>YOUR MESSAGE</label>
+      <textarea id="msg" placeholder="Habari Joseph, nahitaji..." required></textarea>
+      <button type="submit" class="submit-btn">📩 Send via WhatsApp to 0725213860</button>
+      <p class="form-note">Form inatuma direct kwa WhatsApp ya Joseph - hakuna email, ni fast & private</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand"><h3><span>🌿</span> Wellness Center</h3><p>Founded by Joseph Otieno Pesah - Trusted Green World Distributor in Kenya.</p></div>
+    <div class="footer-col"><h4>QUICK LINKS</h4><a href="index.html">Home</a><a href="about.html">About Joseph</a><a href="products.html">Products</a><a href="contact.html">Contact Joseph</a></div>
+    <div class="footer-col"><h4>CONTACT JOSEPH</h4><a>Nairobi, Kenya</a><a href="tel:0725213860">0725213860</a><a>Free Consultation</a></div>
+  </div>
+  <div class="ad-banner">
+    <p>🚀 Need a Website Like This? <b>Designed by Tujenge Codes | 0746817991</b></p>
+    <a href="https://wa.me/254746817991?text=Habari%2C%20nataka%20website%20kama%20ya%20Wellness%20Center" target="_blank">💬 WhatsApp Us</a>
+  </div>
+  <div class="copyright">
+    <span>© 2026 Wellness Center - Joseph Otieno Pesah. All rights reserved.</span>
+    <span>Built with 💚 by <b style="color:#8fcf9a">Tujenge Codes</b> | 0746817991</span>
+  </div>
+</footer>
+</body>
+</html>

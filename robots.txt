@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wellnesscenter-kenya.netlify.app/sitemap.xml

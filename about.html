@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Joseph Otieno Pesah - Wellness Center</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f6faf4}
+header{padding:18px 6%;display:flex;justify-content:space-between;align-items:center;background:#fff;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,0.06)}
+.logo{font-weight:700;font-size:18px;color:#0a2a14;display:flex;align-items:center;gap:10px}
+.logo b{width:36px;height:36px;background:#145a2f;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff}
+nav a{margin-left:32px;text-decoration:none;color:#555;font-size:14px;font-weight:500}
+nav a.active{color:#145a2f;font-weight:700;border-bottom:2.5px solid #145a2f;padding-bottom:4px}
+.about-hero{min-height:440px;display:flex;align-items:center;padding:0 6%;position:relative;background:url('herbs.jpg') center/cover no-repeat}
+.about-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg, rgba(0,0,0,0.68) 0%, rgba(0,0,0,0.30) 100%);z-index:1}
+.about-hero-content{position:relative;z-index:2;max-width:700px}
+.about-hero h1{font-family:'DM Serif Display',serif;font-size:54px;color:#fff;line-height:0.95}
+.about-hero h1 em{color:#b6f0bf;font-style:italic}
+.about-hero p{color:#d9ece0;margin-top:14px;font-size:15px;line-height:1.6;max-width:520px}
+.story{padding:60px 6%;display:grid;grid-template-columns:1.1fr 0.9fr;gap:50px;align-items:start;background:#fff;margin-top:-50px;position:relative;z-index:5;border-radius:28px 28px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,0.08)}
+.founder-badge{display:inline-flex;align-items:center;gap:8px;background:#e8f5e9;border:1px solid #c8e6c9;color:#145a2f;padding:7px 14px;border-radius:100px;font-size:11px;font-weight:700;letter-spacing:1.2px;margin-bottom:18px}
+.story-text h2{font-family:'DM Serif Display',serif;font-size:40px;color:#0a1f0e;line-height:1.05}
+.story-text h2 em{color:#145a2f;font-style:italic}
+.story-text .heartfelt{color:#3a5a42;font-size:15px;line-height:1.85;margin-top:18px}
+.story-text .heartfelt b{color:#0a2a14}
+.quote-box{margin-top:26px;background:linear-gradient(135deg,#f6faf4,#e8f5e9);border-left:4px solid #2faa55;border-radius:0 14px 14px 0;padding:18px 20px}
+.quote-box p{font-style:italic;color:#0a2a14;font-size:14px;line-height:1.6;font-family:'DM Serif Display',serif}
+.quote-box span{display:block;margin-top:8px;font-size:12px;font-weight:700;color:#145a2f;letter-spacing:1px;font-family:'Poppins',sans-serif;font-style:normal}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.stat{background:#f6faf4;border:1px solid #e6efe3;border-radius:16px;padding:16px;text-align:center}
+.stat h3{font-size:26px;color:#145a2f;font-weight:700}
+.stat p{font-size:10px;color:#6a8470;margin-top:4px;letter-spacing:1px;font-weight:700}
+.client-card{border-radius:24px;overflow:hidden;background:#fff;border:1px solid #e6efe3;box-shadow:0 20px 50px rgba(0,0,0,0.12);position:sticky;top:90px}
+.client-img{height:420px;background:#eef6e3 url('client.jpg') center top/cover no-repeat}
+.client-info{padding:22px 22px;background:#fff}
+.client-info h3{font-size:20px;font-weight:700;color:#0a1f0e}
+.client-info p.role{color:#2faa55;font-weight:700;font-size:11.5px;letter-spacing:1.5px;margin-top:4px}
+.client-info p.desc{color:#5a7560;font-size:13px;line-height:1.7;margin-top:12px}
+.client-info .contact-btn{margin-top:16px;display:flex;gap:10px}
+.client-info .contact-btn a{flex:1;text-align:center;padding:11px;border-radius:10px;text-decoration:none;font-weight:700;font-size:13px}
+.btn-call{background:#145a2f;color:#fff}
+.btn-wa{background:#f6faf4;color:#145a2f;border:1px solid #c8e6c9}
+.mission{padding:60px 6%;background:#08140c;color:#fff;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.mission h2{font-family:'DM Serif Display',serif;font-size:38px;line-height:1}
+.mission h2 em{color:#8fcf9a;font-style:italic}
+.mission p{color:#8fb49a;font-size:14px;line-height:1.8;margin-top:14px}
+.mission-list{margin-top:20px}
+.mission-list div{display:flex;gap:12px;margin-bottom:14px}
+.mission-list b{width:28px;height:28px;background:#1a3a24;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#8fcf9a;flex-shrink:0;font-size:14px}
+footer{background:#06100a;color:#fff}
+.footer-main{padding:36px 6%;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}
+.footer-brand h3{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.footer-brand h3 span{width:36px;height:36px;background:#2faa55;border-radius:9px;display:flex;align-items:center;justify-content:center}
+.footer-brand p{color:#8fb49a;font-size:13.5px;line-height:1.6;max-width:320px}
+.footer-col h4{font-size:11px;letter-spacing:2px;color:#8fcf9a;margin-bottom:16px}
+.footer-col a{display:block;color:#c8dccb;text-decoration:none;font-size:13px;margin-bottom:10px}
+.ad-banner{background:linear-gradient(90deg,#145a2f,#2faa55);padding:16px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.ad-banner p{font-size:13.5px;font-weight:500}
+.ad-banner p b{background:rgba(0,0,0,0.25);padding:5px 12px;border-radius:20px;margin-left:8px;color:#fff}
+.ad-banner a{background:#fff;color:#0a2a14;padding:10px 20px;border-radius:11px;text-decoration:none;font-weight:700;font-size:13px}
+.copyright{padding:14px 6%;display:flex;justify-content:space-between;color:#5a7a62;font-size:11.5px;flex-wrap:wrap;border-top:1px solid #102216}
+@media(max-width:900px){.about-hero h1{font-size:38px}.story{grid-template-columns:1fr;padding:36px 6%;margin-top:-30px}.client-card{position:relative;top:0}.mission{grid-template-columns:1fr}.footer-main{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><b>🌿</b> Wellness Center</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<section class="about-hero">
+  <div class="about-hero-content">
+    <h1>Meet <em>Joseph Otieno Pesah</em></h1>
+    <p>Founder of Wellness Center | Trusted Green World Distributor in Kenya - On a mission to restore hope through natural wellness.</p>
+  </div>
+</section>
+<section class="story">
+  <div class="story-text">
+    <div class="founder-badge">● MY PERSONAL JOURNEY</div>
+    <h2>From My Heart To <em>Your Family's Health</em></h2>
+    <p class="heartfelt">
+      Hello, I'm <b>Joseph Otieno Pesah</b>. 
+      <br><br>
+      Wellness Center didn't start as a business - it started as a personal search. I watched people I loved struggle with health challenges, spending so much on temporary solutions. I knew there had to be a better, more natural way.
+      <br><br>
+      That's when I discovered <b>Green World</b>. I tried the products myself, I saw the difference, and I felt the change. It wasn't just about selling - it was about sharing something that truly works.
+      <br><br>
+      Today, as a proud <b>Green World Distributor</b> and founder of Wellness Center, my promise to you is simple: <b>I will never recommend anything I wouldn't give to my own family.</b> Every product here is tested, trusted, and chosen with love.
+      <br><br>
+      Whether you are looking to boost your immunity, manage a lifestyle condition, or just live a healthier life - I am here to walk with you, not just sell to you.
+    </p>
+    <div class="quote-box">
+      <p>"Your health is your first wealth. Let’s protect it together, naturally."</p>
+      <span>— JOSEPH OTIENO PESAH, FOUNDER</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><h3>500+</h3><p>FAMILIES HELPED</p></div>
+      <div class="stat"><h3>100%</h3><p>GENUINE PRODUCTS</p></div>
+      <div class="stat"><h3>24/7</h3><p>GUIDANCE & CARE</p></div>
+    </div>
+  </div>
+  <div class="client-card">
+    <div class="client-img"></div>
+    <div class="client-info">
+      <h3>Joseph Otieno Pesah</h3>
+      <p class="role">FOUNDER, WELLNESS CENTER | GREEN WORLD DISTRIBUTOR</p>
+      <p class="desc">Based in Nairobi, Kenya. I offer free wellness consultation and countrywide delivery. Your journey to natural health starts with a conversation.</p>
+      <div class="contact-btn">
+        <a href="tel:0725213860" class="btn-call">📞 0725213860</a>
+        <a href="https://wa.me/254725213860?text=Habari%20Joseph%2C%20nimeona%20website%20yako%20ya%20Wellness%20Center" target="_blank" class="btn-wa">💬 WhatsApp Joseph</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mission">
+  <div>
+    <h2>My <em>Promise To You</em></h2>
+    <p>I know how confusing wellness information can be. That's why I don't just sell products - I offer guidance, follow-up, and genuine care.</p>
+    <div class="mission-list">
+      <div><b>✓</b><p><strong style="color:#fff">Genuine Green World Products Only</strong><br><span style="color:#8fb49a;font-size:13px">No fakes, no shortcuts. Direct from Green World.</span></p></div>
+      <div><b>✓</b><p><strong style="color:#fff">Free Personal Consultation</strong><br><span style="color:#8fb49a;font-size:13px">I listen to your story before recommending anything.</span></p></div>
+      <div><b>✓</b><p><strong style="color:#fff">After-Sale Support</strong><br><span style="color:#8fb49a;font-size:13px">I follow up on your progress because your results matter to me.</span></p></div>
+    </div>
+  </div>
+  <div style="background:linear-gradient(135deg,#0e2816,#1a4a2b);border-radius:20px;padding:28px;border:1px solid #1f4a2e">
+    <h4 style="color:#8fcf9a;letter-spacing:2px;font-size:11px;margin-bottom:12px">WHY GREEN WORLD?</h4>
+    <p style="color:#c8e6c9;font-size:14px;line-height:1.7">Green World is a globally trusted brand with over 20 years of research in natural health. Their products are made from organic herbs, scientifically formulated, and certified for quality. As your distributor, I bring this world-class wellness to your doorstep in Kenya.</p>
+    <p style="margin-top:16px;color:#fff;font-weight:700;font-size:13px">📦 Countrywide Delivery | 💯 Money-Back Guarantee on Authenticity</p>
+  </div>
+</section>
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand"><h3><span>🌿</span> Wellness Center</h3><p>Founded by Joseph Otieno Pesah - Supporting your wellness journey with natural products, trusted quality and heartfelt guidance.</p></div>
+    <div class="footer-col"><h4>QUICK LINKS</h4><a href="index.html">Home</a><a href="about.html">About Joseph</a><a href="products.html">Products</a><a href="contact.html">Contact Joseph</a></div>
+    <div class="footer-col"><h4>CONTACT JOSEPH</h4><a>Nairobi, Kenya</a><a href="tel:0725213860">0725213860 - Joseph Otieno Pesah</a><a>Green World Distributor</a></div>
+  </div>
+  <div class="ad-banner">
+    <p>🚀 Need a Website Like This? <b>Designed by Tujenge Codes | 0746817991</b></p>
+    <a href="https://wa.me/254746817991?text=Habari%2C%20nataka%20website%20kama%20ya%20Wellness%20Center" target="_blank">💬 WhatsApp Us</a>
+  </div>
+  <div class="copyright">
+    <span>© 2026 Wellness Center - Joseph Otieno Pesah. All rights reserved.</span>
+    <span>Built with 💚 by <b style="color:#8fcf9a">Tujenge Codes</b> | 0746817991</span>
+  </div>
+</footer>
+</body>
+</html>
